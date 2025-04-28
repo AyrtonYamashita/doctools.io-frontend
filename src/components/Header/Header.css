@@ -1,0 +1,44 @@
+header {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+
+  img {
+    width: 8rem;
+    vertical-align: center;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+
+    li {
+      font-weight: 700;
+      padding: .7rem;
+      color: #1d2744;
+      transition: .2s ease;
+    }
+
+    li:nth-child(5) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      background-color: #3474eb;
+      border-radius: 99px;
+      color: #fbfdff;
+
+      &:hover {
+        color: #1d2744;
+      }
+    }
+
+    li:hover {
+      color: #3474eb;
+    }
+  }
+}

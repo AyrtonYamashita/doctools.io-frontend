@@ -1,27 +1,18 @@
+import home_side from "../assets/home-side.png";
+
 function Home() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-gradient-to-b from-white to-gray-100">
-      <h1 className="text-4xl md:text-6xl font-extrabold text-blue-600 mb-4">
-        DocTools.io
-      </h1>
-      <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-8">
-        Ferramentas simples e poderosas para manipulação de documentos. Sem
-        anúncios, sem limites, totalmente gratuito.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4">
-        <a
-          href="/extract"
-          className="bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition"
-        >
-          Extrair documentos
-        </a>
-        <a
-          href="/merge"
-          className="bg-gray-200 text-gray-900 px-6 py-3 rounded-xl font-medium hover:bg-gray-300 transition"
-        >
-          Meclar PDFs
-        </a>
-      </div>
+    <section className="flex w-full">
+      <main className="border-1">
+        <div className=" font-mono text-2xl">
+          Simplifique a forma de lidar com documentos.
+        </div>
+        <p>Extraia, edite e mescle documentos com facilidade.</p>
+        <a href="#">Faça o Upload do seu PDF</a>
+      </main>
+      <aside className="border-1">
+        <img src={home_side} alt="" />
+      </aside>
     </section>
   );
 }
