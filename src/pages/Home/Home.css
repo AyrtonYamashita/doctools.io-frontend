@@ -1,0 +1,50 @@
+main {
+  width: 50%;
+  height: 100%;
+  padding-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-block: auto;
+}
+
+main h1 {
+  font-family: 'Inter', sans-serif;
+  color: #172438;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+main p:nth-child(3) {
+  background-color: #3472eb;
+  padding: .8rem;
+  border-radius: 99px;
+  font-weight: 600;
+  color: white;
+  width: 75%;
+  text-align: center;
+  cursor: pointer;
+  transition: .2s ease;
+
+  &:hover {
+    background-color: #466491;
+  }
+}
+
+aside {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside img {
+  width: 40rem;
+}

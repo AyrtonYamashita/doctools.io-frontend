@@ -31,9 +31,11 @@ header {
       background-color: #3474eb;
       border-radius: 99px;
       color: #fbfdff;
+      cursor: pointer;
 
       &:hover {
-        color: #1d2744;
+        background-color: #466592;
+        color: #fbfdff;
       }
     }
 
