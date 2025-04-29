@@ -20,6 +20,7 @@ function Popup({ message, type, onClose }) {
       title = "Erro";
       break;
     default:
+      title = "Aviso";
       break;
   }
 
@@ -28,7 +29,15 @@ function Popup({ message, type, onClose }) {
       <img src={icons[type]} alt="ícone de estado" className="popup-icon" />
       <div className="popup-content">
         <h1>{title}</h1>
-        <p>{message}</p>
+        {Array.isArray(message) ? (
+          <ul className="popup-list">
+            {message.map((msg, index) => (
+              <li key={index}>{msg}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{message}</p>
+        )}
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"

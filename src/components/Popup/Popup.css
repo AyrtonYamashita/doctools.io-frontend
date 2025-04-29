@@ -4,7 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  height: 5rem;
+  min-height: 5rem;
   border-radius: .5rem;
   display: flex;
   overflow: hidden;
@@ -36,23 +36,34 @@
 }
 
 
-img {
+.popup img {
   width: 2.5rem;
 }
 
-svg {
+.popup svg {
   cursor: pointer;
 }
 
-h1 {
+.popup h1 {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: #25292e;
 }
 
-p {
+.popup p {
   font-size: .875rem;
   color: #424a52;
+}
+
+.popup-list {
+  padding: .5rem;
+  list-style-type: disc;
+}
+
+.popup-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: .875rem;
 }
 
 @keyframes fadeIn {

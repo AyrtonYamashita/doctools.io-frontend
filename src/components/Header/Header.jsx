@@ -22,7 +22,7 @@ function Header() {
           <Link to="/">Sobre</Link>
         </li>
         <li>
-          <Link to="/">Login</Link>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
     </header>

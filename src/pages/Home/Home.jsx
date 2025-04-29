@@ -1,15 +1,16 @@
 import home_side from "/assets/home-side.png";
 import qrcode from "/assets/qrcode2-icon.png";
-
 import ExtractInfo from "../../components/Details/extract-info";
 import MergeInfo from "../../components/Details/merge-info";
 import EditInfo from "../../components/Details/edit-info";
 import SecurityInfo from "../../components/Informations/security-info";
 import FastInfo from "../../components/Informations/fast-info";
 import OnlineInfo from "../../components/Informations/online-info";
-import SuggestionForm from "../../components/Forms/suggestions";
+import SuggestionForm from "../../components/Forms/Survey Form/suggestions";
 import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./Home.css";
@@ -34,7 +35,7 @@ const itemVariants = {
 function Home() {
   return (
     <>
-      {/* Seção principal */}
+      <Header />
       <div className="container">
         <motion.main
           variants={containerVariants}
@@ -86,7 +87,6 @@ function Home() {
         </aside>
       </div>
 
-      {/* Seção de detalhes */}
       <div className="container">
         <div className="details-wrapper">
           <ExtractInfo />
@@ -95,7 +95,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Seção de informações */}
       <div className="container">
         <div className="info-wrapper">
           <SecurityInfo />
@@ -104,7 +103,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Seção de contribuição */}
       <div className="container">
         <div className="purchase">
           <img src={qrcode} alt="QrCode ilustrativo" />

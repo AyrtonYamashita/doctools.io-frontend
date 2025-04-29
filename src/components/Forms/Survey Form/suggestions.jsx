@@ -1,7 +1,8 @@
 import { useState } from "react";
 import validateForm from "./validateForm";
 import resetForm from "./resetForm";
-import { usePopup } from "../Popup/usePopup";
+import { usePopup } from "../../Popup/usePopup";
+import "./suggestions.css";
 
 function SuggestionForm() {
   const { showPopup } = usePopup();
@@ -12,11 +13,11 @@ function SuggestionForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newErrors = validateForm(email, description);
+    const newErrors = validateForm(email, description, null);
 
     if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      showPopup(`${newErrors.email}`, "warning");
+      const errorList = Object.values(newErrors);
+      showPopup(errorList, "error");
       return;
     }
     console.log(errors);
@@ -27,13 +28,13 @@ function SuggestionForm() {
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="survey-form">
         <h3>Nos ajude a melhorar, envie sua sugestão</h3>
         <input
           type="email"
           placeholder="Informe seu e-mail"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value.toLowerCase())}
         />
         <textarea
           name="description"
