@@ -13,7 +13,7 @@ function Header() {
           <Link to="/">Início</Link>
         </li>
         <li>
-          <Link to="/">Extrair documentos</Link>
+          <Link to="/extract">Extrair documentos</Link>
         </li>
         <li>
           <Link to="/">Mesclar PDFs</Link>
