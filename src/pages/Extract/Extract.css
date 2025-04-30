@@ -9,16 +9,50 @@
   & h1 {
     font-family: 'Inter', sans-serif;
     color: #172438;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: .5rem;
+
+
+    & img {
+      vertical-align: middle;
+      width: 3.7rem;
+    }
   }
 }
 
 .cont-1 {
   display: flex;
-  width: 50rem;
   padding: 4rem;
   align-items: center;
   flex-direction: column;
-  background-color: white;
+  border-radius: .875rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.link-wrapper {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+
+  p {
+    color: #3474eb;
+    font-weight: 600;
+    transition: .2s ease;
+
+    &:hover {
+      color: #172438;
+    }
+  }
+}
+
+.subtitle-extract {
+  margin-bottom: 1.5rem;
 }

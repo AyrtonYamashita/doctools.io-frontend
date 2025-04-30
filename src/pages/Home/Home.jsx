@@ -9,6 +9,7 @@ import OnlineInfo from "../../components/Informations/online-info";
 import SuggestionForm from "../../components/Forms/Survey Form/suggestions";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import { pageTransition } from "../../animations/pageAnimations.js";
 
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
@@ -30,13 +31,6 @@ const containerVariants = {
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0 },
-};
-
-const pageTransition = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -20 },
-  transition: { duration: 0.4 },
 };
 
 function Home() {

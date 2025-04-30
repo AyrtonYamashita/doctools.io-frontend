@@ -55,19 +55,21 @@ function FileUpload() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M48 16L32 32H40V56H56V32H64L48 16Z" fill="#bebebe" />
+              <path d="M48 16L32 32H40V56H56V32H64L48 16Z" fill="#466592" />
               <rect
                 x="24"
                 y="60"
                 width="48"
                 height="20"
                 rx="2"
-                fill="#bebebe"
+                fill="#466592"
               />
             </svg>
 
-            <p>Arraste um arquivo aqui ou clique para selecionar</p>
-            <p>Envie apenas documentos .pdf</p>
+            <p className="drag-item">Arraste e solte o arquivo aqui</p>
+            <span>ou</span>
+            <p className="button-file-upload">Selecione o arquivo</p>
+            <p className="info-file-upload">Envie apenas documentos .pdf</p>
           </>
         )}
       </label>

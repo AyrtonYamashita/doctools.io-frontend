@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #FEFEFF;
+  background-color: #fefeffc2;
   border-radius: .75rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -18,10 +18,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  border: 2px dashed #bebebe;
   padding: 1rem;
-  color: #bebebe;
+  color: #466592;
   font-weight: 600;
   border-radius: .75rem;
   cursor: pointer;
@@ -32,13 +30,33 @@
     transition: .2s ease;
   }
 
-  &:hover {
-    border: 2px dashed #2559bb;
-    color: #2559bb;
-
-    & svg path,
-    svg rect {
-      fill: #2559bb;
-    }
+  &:hover svg path,
+  &:hover svg rect {
+    fill: #3474eb;
   }
+}
+
+.button-file-upload {
+  background-color: #3474eb;
+  color: white;
+  font-weight: 600;
+  padding: .875rem;
+  border-radius: .875rem;
+  width: 15rem;
+  text-align: center;
+  transition: .2s ease;
+  margin-top: .5rem;
+
+  &:hover {
+    background-color: #466592;
+  }
+}
+
+.info-file-upload {
+  font-size: .75rem;
+  margin-top: .875rem;
+}
+
+.drag-item {
+  margin-bottom: .5rem
 }

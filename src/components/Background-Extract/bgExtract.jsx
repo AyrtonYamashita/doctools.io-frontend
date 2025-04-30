@@ -8,6 +8,19 @@ function Background() {
       <div className="wave-container">
         <Wave
           className="wave-layer-2"
+          fill="rgba(164, 179, 209, 0.51)"
+          preserveAspectRatio="none"
+          style={{ width: "100%", height: "100%" }}
+          paused={false}
+          options={{
+            height: 250,
+            amplitude: 60,
+            speed: 0.2,
+            points: 5,
+          }}
+        />
+        <Wave
+          className="wave-layer-2"
           fill="rgba(52, 116, 235, 0.20)"
           preserveAspectRatio="none"
           style={{ width: "100%", height: "100%" }}
@@ -48,6 +61,19 @@ function Background() {
         />
       </div>
       <div className="wave wave-container">
+        <Wave
+          className="wave-layer-2"
+          fill="rgba(164, 179, 209, 0.51)"
+          preserveAspectRatio="none"
+          style={{ width: "100%", height: "100%" }}
+          paused={false}
+          options={{
+            height: 250,
+            amplitude: 60,
+            speed: 0.2,
+            points: 5,
+          }}
+        />
         <Wave
           className="wave-layer-2"
           fill="rgba(52, 116, 235, 0.20)"
