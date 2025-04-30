@@ -7,9 +7,14 @@ import "./Extract.css";
 function Extract() {
   return (
     <>
-      <Background />
       <Header />
-      <div className="container-extract"></div>
+      <Background />
+      <div className="container-extract">
+        <div className="cont-1">
+          <h1>Extração de Documentos</h1>
+          <FileUpload />
+        </div>
+      </div>
       <Footer />
     </>
   );

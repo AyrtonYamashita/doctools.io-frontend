@@ -58,14 +58,14 @@ input+input {
   }
 }
 
-.register-form p:nth-last-child(2),
-p:nth-last-child(1) {
+.register-form .already-register,
+.access-login {
   margin-top: .5rem;
   text-align: center;
   font-size: .75rem;
 }
 
-.register-form p:nth-last-child(1) {
+.register-form .access-login {
   color: #3474eb;
   font-weight: 600;
   transition: .2s ease;

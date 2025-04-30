@@ -1,7 +1,44 @@
-.container-upload {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  border: 1px solid red;
+.upload-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FEFEFF;
+  border-radius: .75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.upload-wrapper .hidden-input {
+  display: none;
+}
+
+.uploadLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 2px dashed #bebebe;
+  padding: 1rem;
+  color: #bebebe;
+  font-weight: 600;
+  border-radius: .75rem;
+  cursor: pointer;
+  transition: .2s ease;
+
+  & svg path,
+  svg rect {
+    transition: .2s ease;
+  }
+
+  &:hover {
+    border: 2px dashed #2559bb;
+    color: #2559bb;
+
+    & svg path,
+    svg rect {
+      fill: #2559bb;
+    }
+  }
 }

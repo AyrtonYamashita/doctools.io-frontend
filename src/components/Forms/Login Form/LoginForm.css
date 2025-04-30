@@ -71,8 +71,8 @@ input+input {
   }
 }
 
-.login-form p:nth-last-child(2),
-p:nth-last-child(1) {
+.login-form .no-register-login-page-link,
+.create-user-login-page-link {
   margin-top: .5rem;
   text-align: center;
   font-size: .75rem;

@@ -93,8 +93,8 @@ function RegisterForm() {
             }}
           />
           <button type="submit">Cadastrar</button>
-          <p>Já possui cadastro?</p>
-          <p>
+          <p className="already-register">Já possui cadastro?</p>
+          <p className="access-login">
             <Link to="/login">Acesse aqui</Link>
           </p>
         </form>

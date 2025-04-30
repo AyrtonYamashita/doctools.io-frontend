@@ -58,8 +58,8 @@ function LoginForm() {
             <Link to="/recovery">Esqueci minha senha</Link>
           </p>
           <button type="submit">Acessar</button>
-          <p>Ainda não possui cadastro?</p>
-          <p>
+          <p className="no-register-login-page-link">Ainda não possui cadastro?</p>
+          <p className="create-user-login-page-link">
             <Link to="/register">Cadastre-se aqui</Link>
           </p>
         </form>

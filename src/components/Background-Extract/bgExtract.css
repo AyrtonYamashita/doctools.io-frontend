@@ -1,0 +1,34 @@
+.container-bg-extract {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.container-bg-extract .wave {
+  transform: rotate(180deg);
+}
+
+.wave-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wave-layer-1{
+  position: absolute;
+  top: 42%;
+  left: 0;
+  width: 100%;
+}
+.wave-layer-2{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+}

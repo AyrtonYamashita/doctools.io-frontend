@@ -32,94 +32,103 @@ const itemVariants = {
   show: { opacity: 1, y: 0 },
 };
 
+const pageTransition = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 },
+  transition: { duration: 0.4 },
+};
+
 function Home() {
   return (
     <>
-      <Header />
-      <div className="container">
-        <motion.main
-          variants={containerVariants}
-          initial="hidden"
-          animate="show"
-        >
-          <motion.h1 variants={itemVariants}>
-            Simplifique a forma
-            <br /> de lidar com documentos
-          </motion.h1>
+      <motion.div {...pageTransition}>
+        <Header />
+        <div className="container">
+          <motion.main
+            variants={containerVariants}
+            initial="hidden"
+            animate="show"
+          >
+            <motion.h1 variants={itemVariants}>
+              Simplifique a forma
+              <br /> de lidar com documentos
+            </motion.h1>
 
-          <motion.p variants={itemVariants}>
-            Mescle vários PDF, extraia informações com facilidade.
-          </motion.p>
+            <motion.p variants={itemVariants}>
+              Mescle vários PDF, extraia informações com facilidade.
+            </motion.p>
 
-          <motion.p variants={itemVariants}>
-            <Link to="/">Faça upload do seu documento</Link>
-          </motion.p>
-        </motion.main>
+            <motion.p variants={itemVariants}>
+              <Link to="/">Faça upload do seu documento</Link>
+            </motion.p>
+          </motion.main>
 
-        <aside>
-          <motion.img
-            src={home_side}
-            alt="Imagem ilustrativa"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              x: [0, -10, 0],
-              scale: [1, 1.01, 1],
-            }}
-            transition={{
-              opacity: { duration: 1 },
-              x: { duration: 1 },
-              y: {
-                duration: 5,
-                repeat: Infinity,
-                repeatType: "loop",
-                ease: "easeInOut",
-              },
-              scale: {
-                duration: 5,
-                repeat: Infinity,
-                repeatType: "loop",
-                ease: "easeInOut",
-              },
-            }}
-          />
-        </aside>
-      </div>
-
-      <div className="container">
-        <div className="details-wrapper">
-          <ExtractInfo />
-          <MergeInfo />
-          <EditInfo />
+          <aside>
+            <motion.img
+              src={home_side}
+              alt="Imagem ilustrativa"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                x: [0, -10, 0],
+                scale: [1, 1.01, 1],
+              }}
+              transition={{
+                opacity: { duration: 1 },
+                x: { duration: 1 },
+                y: {
+                  duration: 5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  ease: "easeInOut",
+                },
+                scale: {
+                  duration: 5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  ease: "easeInOut",
+                },
+              }}
+            />
+          </aside>
         </div>
-      </div>
 
-      <div className="container">
-        <div className="info-wrapper">
-          <SecurityInfo />
-          <FastInfo />
-          <OnlineInfo />
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="purchase">
-          <img src={qrcode} alt="QrCode ilustrativo" />
-        </div>
-        <div className="reviews">
-          <div className="solidary">
-            <h1>Ajude a manter este projeto ativo</h1>
-            <p>
-              Contribua para manter o site sem anúncios ou limite de
-              transferências.
-            </p>
+        <div className="container">
+          <div className="details-wrapper">
+            <ExtractInfo />
+            <MergeInfo />
+            <EditInfo />
           </div>
-          <SuggestionForm />
         </div>
-      </div>
 
-      <Footer />
+        <div className="container">
+          <div className="info-wrapper">
+            <SecurityInfo />
+            <FastInfo />
+            <OnlineInfo />
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="purchase">
+            <img src={qrcode} alt="QrCode ilustrativo" />
+          </div>
+          <div className="reviews">
+            <div className="solidary">
+              <h1>Ajude a manter este projeto ativo</h1>
+              <p>
+                Contribua para manter o site sem anúncios ou limite de
+                transferências.
+              </p>
+            </div>
+            <SuggestionForm />
+          </div>
+        </div>
+
+        <Footer />
+      </motion.div>
     </>
   );
 }
