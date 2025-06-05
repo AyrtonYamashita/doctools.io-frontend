@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Nuvem preenchida -->
+  <path d="M48 28.5C46.5 20.2 39.2 14 30.5 14c-6.6 0-12.4 3.7-15.2 9.1C9.7 24.6 6 29.3 6 34.5 6 40.3 10.7 45 16.5 45h31c6.1 0 10.5-4.6 10.5-10.5 0-4.8-3.3-8.8-7.9-10z" 
+        fill="#4285f4" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Seta de upload branca com traço -->
+  <path d="M32 42c-0.6 0-1-0.4-1-1V26.8l-4.6 4.6c-0.4 0.4-1 0.4-1.4 0s-0.4-1 0-1.4l6.3-6.3c0.4-0.4 1-0.4 1.4 0l6.3 6.3c0.4 0.4 0.4 1 0 1.4s-1 0.4-1.4 0L33 26.8V41c0 0.6-0.4 1-1 1z" 
+        fill="#ffffff" stroke="#ffffff" stroke-width="0.5"/>
+</svg>
