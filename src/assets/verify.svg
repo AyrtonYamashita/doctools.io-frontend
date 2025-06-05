@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Círculo preenchido com verde -->
+  <circle cx="32" cy="32" r="30" fill="#34A853" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Check branco -->
+  <path d="M20 33l8 8 16-16" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
