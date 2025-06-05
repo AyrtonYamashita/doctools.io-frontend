@@ -42,7 +42,9 @@ export function SignUp() {
         type="password"
         onChange={(e) => setConfirmPassword(e.target.value)}
       />
-      <Button type="submit">Cadastrar</Button>
+      <Button type="submit" isLoading={isLoading}>
+        Cadastrar
+      </Button>
       <a
         href="/"
         className="text-sm font-semibold text-gray-100 mt-10 mb-4 text-center hover:text-blue-600 transition ease-linear"
