@@ -17,9 +17,9 @@ export function ExtractPDF() {
     if (bytes === 0) return "0 Bytes";
     const i = Math.floor(Math.log(bytes) / Math.log(1024));
     const value = bytes / Math.pow(1024, i);
-    return `Tamanho do arquivo enviado: <strong>${value.toFixed(2)} ${
-      units[i]
-    }</strong>`;
+    return `Tamanho do arquivo enviado: <strong classname="text-gray-100">${value.toFixed(
+      2
+    )} ${units[i]}</strong>`;
   }
 
   function handleFile(file: File) {
@@ -54,11 +54,15 @@ export function ExtractPDF() {
   function onDragOver(e: React.DragEvent) {
     if (file) return;
     e.preventDefault();
-    dragzoneRef.current?.classList.add("dragover");
+    dragzoneRef.current?.classList.remove("border-gray-300");
+    dragzoneRef.current?.classList.add("border-blue-500");
+    dragzoneRef.current?.classList.add("bg-blue-100");
   }
 
   function onDragLeave() {
-    dragzoneRef.current?.classList.remove("dragover");
+    dragzoneRef.current?.classList.remove("border-blue-500");
+    dragzoneRef.current?.classList.add("border-gray-300");
+    dragzoneRef.current?.classList.remove("bg-blue-100");
   }
 
   function onButtonClick() {
@@ -90,7 +94,7 @@ export function ExtractPDF() {
         onDragLeave={onDragLeave}
         className={`${
           !file && "border-dashed border-2 border-gray-300"
-        } rounded-xl flex flex-col justify-center items-center  py-8 text-sm`}
+        } rounded-xl flex flex-col justify-center items-center  py-8 text-sm transition ease-linear`}
       >
         <img
           src={imageSrc}
@@ -112,7 +116,7 @@ export function ExtractPDF() {
         >
           {labelText}
         </label>
-        <span className="text-sm text-gray-300">
+        <span className="text-sm text-gray-200">
           {file ? (
             <span dangerouslySetInnerHTML={{ __html: fileInfo }} />
           ) : (

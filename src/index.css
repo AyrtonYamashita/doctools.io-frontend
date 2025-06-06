@@ -20,4 +20,7 @@
   --color-blue-950: #182653;
 
   --text-xxs: 0.625rem;
+  --w-lg: full;
+  --w-md: screen;
+  --w-sm: 8;
 }

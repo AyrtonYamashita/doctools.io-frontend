@@ -1,21 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80">
-  <!-- Ícone do documento com engrenagem -->
-  <g transform="translate(10,10)">
-    <!-- Documento -->
-    <path fill="#4285F4" d="M0 0h32l8 8v44a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z"/>
-    <!-- Dobra -->
-    <path fill="#2f6fe0" d="M32 0v8h8l-8-8z"/>
-    <!-- Engrenagem -->
-    <g transform="translate(20,38) scale(0.7)">
-      <circle r="4" fill="#ffffff"/>
-      <path stroke="#ffffff" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-        d="M0 -6 V-7 M4.2 -4.2 L5 -5 M6 0 H7 M4.2 4.2 L5 5 M0 6 V7 M-4.2 4.2 L-5 5 M-6 0 H-7 M-4.2 -4.2 L-5 -5"/>
-    </g>
-  </g>
-
-  <!-- Nome do projeto -->
-  <text x="90" y="50" font-family="Segoe UI, sans-serif" font-size="32" fill="#4285F4" font-weight="600">
-    doctools
-    <tspan fill="#4285F4" font-weight="400" font-size="28">.io</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <text x="0" y="42" font-family="Segoe UI, sans-serif" font-size="42" fill="#4285F4" font-weight="600">
+    doctools.io
   </text>
 </svg>
